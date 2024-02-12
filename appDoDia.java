@@ -22,9 +22,9 @@ public class appDoDia extends JFrame {
 
         // Componentes
         JPanel entradaPanel = new JPanel(new GridLayout(5, 2));
-        JLabel tarefaLabel = new JLabel("TAREFA:");
+        JLabel tarefaLabel = new JLabel("Tarefa:");
         tarefaField = new JTextField();
-        JLabel diasSemanaLabel = new JLabel("DIA DA SEMANA:");
+        JLabel diasSemanaLabel = new JLabel("Dia da semana:");
         diasSemanaComboBox = new JComboBox<>(new String[]{"Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"});
         JLabel dataLabel = new JLabel("Data (dd/mm/yyyy):");
         dataField = new JTextField();
