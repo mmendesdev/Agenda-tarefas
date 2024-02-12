@@ -13,7 +13,7 @@ public class appDoDia extends JFrame {
     private JTextArea tarefasTextArea;
 
     public appDoDia() {
-        super("Agenda de Tarefas");
+        super("AGENDA DO MATHEUS MENDES");
 
         // Configuração do frame
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,15 +22,15 @@ public class appDoDia extends JFrame {
 
         // Componentes
         JPanel entradaPanel = new JPanel(new GridLayout(5, 2));
-        JLabel tarefaLabel = new JLabel("Tarefa:");
+        JLabel tarefaLabel = new JLabel("TAREFA:");
         tarefaField = new JTextField();
-        JLabel diasSemanaLabel = new JLabel("Dia da Semana:");
+        JLabel diasSemanaLabel = new JLabel("DIA DA SEMANA:");
         diasSemanaComboBox = new JComboBox<>(new String[]{"Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"});
         JLabel dataLabel = new JLabel("Data (dd/mm/yyyy):");
         dataField = new JTextField();
         JLabel horaLabel = new JLabel("Hora (HH:mm):");
         horaField = new JTextField();
-        JButton adicionarButton = new JButton("Adicionar Tarefa");
+        JButton adicionarButton = new JButton("ADICIONAR TAREFAS");
         adicionarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
