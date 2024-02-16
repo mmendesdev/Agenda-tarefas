@@ -25,12 +25,12 @@ public class appDoDia extends JFrame {
         JLabel tarefaLabel = new JLabel("Tarefa:");
         tarefaField = new JTextField();
         JLabel diasSemanaLabel = new JLabel("Dia da semana:");
-        diasSemanaComboBox = new JComboBox<>(new String[]{"Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"});
+        diasSemanaComboBox = new JComboBox<>(new String[]{"Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"});
         JLabel dataLabel = new JLabel("Data (dd/mm/yyyy):");
         dataField = new JTextField();
         JLabel horaLabel = new JLabel("Hora (HH:mm):");
         horaField = new JTextField();
-        JButton adicionarButton = new JButton("ADICIONAR TAREFAS");
+        JButton adicionarButton = new JButton("ADICIONAR MAIS TAREFAS");
         adicionarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -70,7 +70,7 @@ public class appDoDia extends JFrame {
 
         // Validação básica
         if (tarefa.isEmpty() || data.isEmpty() || hora.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Preencha todos os campos", "Erro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Preencha todos os campos", "ERRO!!", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
