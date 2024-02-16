@@ -13,7 +13,7 @@ public class appDoDia extends JFrame {
     private JTextArea tarefasTextArea;
 
     public appDoDia() {
-        super("AGENDA DO MATHEUS MENDES");
+        super("MATHEUS MENDES (AGENDA)");
 
         // Configuração do frame
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
